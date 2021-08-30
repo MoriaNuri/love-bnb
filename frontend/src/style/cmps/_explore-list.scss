@@ -1,0 +1,41 @@
+.explore-list {
+    // margin-bottom: 20px;
+    h5 {
+        color: $clr5;
+        font-size: 2rem;
+        font-family: Roboto;
+        margin-bottom: 20px;
+    }
+    .items-container {
+        display: flex;
+        gap: 15px;
+        justify-content: space-between;
+        margin-bottom: 40px;
+        h4 {
+            color: $clr5;
+            font-size: 1.3rem;
+            font-family: Roboto;
+            cursor: pointer;
+        }
+        img {
+            border-radius: 8px;
+            width: 100%;
+            cursor: pointer;
+        }
+    }
+}
+
+@include for-mobile-layout {
+    .items-container {
+        width: 90vw;
+        gap: 20px;
+        .card-explore{
+            width: 90vw;
+            img {
+                height: 440px;
+                object-position: center;
+              }
+
+        }
+    }
+}

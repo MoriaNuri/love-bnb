@@ -1,0 +1,159 @@
+@keyframes slide-fwd-bottom {
+    0% {
+        -webkit-transform: translateZ(-50px) translateY(-50px)scale(0.5);
+        transform: translateZ(-50px) translateY(-50px)scale(0.5);
+    }
+    100% {
+        -webkit-transform: translateZ(0) translateY(0) scale(1);
+        transform: translateZ(0) translateY(0)scale(1);
+    }
+}
+
+.stay-filter {
+    position: relative;
+    z-index: 50;
+    animation-name: slide-fwd-bottom;
+    animation-duration: .4s;
+    border-radius: 40px;
+    font-size: .75rem;
+    display: flex;
+    align-items: center;
+    // width: fit-content;
+    background-color: #ffffff;
+    padding-inline-end: 7px;
+    border: $clr1 solid 1px;
+    text-overflow: ellipsis;
+    margin-top: 10px;
+    .first {
+        border-radius: 40px;
+        display: flex;
+        align-items: center;
+        background-color: #ffffff;
+    }
+    .sep {
+        border-radius: 40px;
+        width: 1px;
+        height: 32px;
+        background-color: #eaeaea;
+    }
+    .location>div {
+        padding: 14px 18px 14px 32px;
+        div {
+            min-width: 95px;
+            max-width: 203px;
+        }
+    }
+    .dates {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        cursor: pointer;
+        .el-date-editor.el-range-editor.el-input__inner.date-picker.el-date-editor--daterange {
+            position: absolute;
+            left: 30px !important;
+            top: 26px !important;
+            visibility: hidden;
+        }
+        .check-in,
+        .check-out {
+            &>div {
+                border-radius: 50px;
+                padding: 14px 24px;
+                div {
+                    min-width: 100px;
+                    max-width: 130px;
+                }
+                .date-value {
+                    color: $clr5;
+                    font-weight: 600;
+                    font-size: 0.75rem;
+                    line-height: 1.125rem;
+                }
+                .placeholder {
+                    color: #838383;
+                    font-weight: 300;
+                    font-size: 0.8rem;
+                    line-height: 1.125rem;
+                }
+                &:hover {
+                    background-color: #ebebeb;
+                }
+            }
+        }
+    }
+    .guests {
+        &>div {
+            padding: 14px 24px;
+            min-width: 95px;
+            div {
+                min-width: 95px;
+                max-width: 121px;
+            }
+        }
+        input {
+             ::-moz-selection {
+                display: none;
+            }
+        }
+    }
+    input {
+        font-family: Roboto;
+        display: block;
+        border: unset;
+        width: 100%;
+        background: none;
+        font-family: Roboto;
+        color: #222222;
+        text-overflow: ellipsis;
+        font-weight: 600;
+        font-size: 0.75rem;
+        line-height: 1.125rem;
+    }
+    input::placeholder {
+        color: #838383;
+        font-weight: 300;
+        font-size: 0.8rem;
+        line-height: 1.125rem;
+    }
+    input:focus-visible {
+        outline: unset;
+    }
+    label {
+        border-radius: 50px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        &.location:hover,
+        &.guests:hover {
+            background-color: #ebebeb;
+        }
+        .title {
+            font-weight: 900;
+            letter-spacing: 0.04em;
+            font-size: 14px;
+            line-height: 16px;
+            padding-bottom: 2px;
+        }
+    }
+    button {
+        cursor: pointer;
+        justify-self: flex-end;
+        margin-top: 1px;
+        font-size: 16px;
+        color: $clr2;
+        background-color: $clr3;
+        border: unset;
+        height: 50px;
+        width: 50px;
+        padding: 16px 17px;
+        border-radius: 100px;
+        box-sizing: border-box;
+        &:hover {
+            background-color: #e70e36;
+        }
+    }
+}
+
+.home-top .stay-filter {
+    position: absolute !important;
+}

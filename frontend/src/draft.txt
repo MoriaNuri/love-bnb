@@ -1,0 +1,124 @@
+nearStay: [
+        {
+          title: "Tel Aviv",
+          imgUrl: 'https://res.cloudinary.com/lovebnb/image/upload/v1626605741/sky1_tpnuc1.png',
+          time: "20 minute drive",
+        },
+        {
+          title: "Jerusalem",
+          imgUrl: 'https://res.cloudinary.com/lovebnb/image/upload/v1626605741/sky3_aqyfl1.png',
+          time: "1 hour drive",
+        },
+        {
+          title: "Eilat",
+          imgUrl: 'https://res.cloudinary.com/lovebnb/image/upload/v1626605741/sky2_owvvtf.png',
+          time: "5 hour drive",
+        },
+        {
+          title: "Natanya",
+          imgUrl: 'https://res.cloudinary.com/lovebnb/image/upload/v1626605742/sky4_edkkdp.png',
+          time: "30 minute drive",
+        },
+      ],
+
+              // async loadUnfilteredStays({ commit }) {
+		// 	try {
+		// 		const unfilteredStays = await stayService.query({
+		// 			price: [0, 1500],
+		// 			types: [],
+		// 			amenities: [],
+		// 			city: '',
+		// 		})
+
+	    var user = {
+        _id: "u101",
+        fullName: "OrlyAmdadi",
+        userName: "orly@amdadi.com",
+        password: "tinkerbell",
+        imgUrl: "http://some-img",
+        hostOrders: [
+            {
+                _id: '',
+                dates: [],
+                guests: 0,
+                created: 0123456789123,
+                status: 'pending',
+                stay: {
+                    _id: '',
+                    name: '',
+                    imgUrl: ''
+                },
+                guest: {
+                    _id: '',
+                    name: '',
+                    imgUrl: ''
+                },
+            }
+        ],
+
+        stays: [
+    {}
+],
+        orders: [
+            {
+                _id: '',
+                dates: [],
+                guests: 0,
+                created: 0123456789123,
+                status: 'pending',
+                stay: {
+                    _id: '',
+                    name: '',
+                    imgUrl: ''
+                },
+                guest: {
+                    _id: '',
+                    name: '',
+                    imgUrl: ''
+                },
+            },
+            {
+                _id: '',
+                dates: [],
+                guests: 0,
+                created: 0123456789123,
+                status: 'pending',
+                stay: {
+                    _id: '',
+                    name: '',
+                    imgUrl: ''
+                },
+                guest: {
+                    _id: '',
+                    name: '',
+                    imgUrl: ''
+                },
+            }
+        ]
+    
+}
+var order = {
+    dates,
+    guests,
+    nightPrice: this.stay.price,
+    nightsPrice,
+    servPrice,
+    totalPrice,
+    created: 0123456789123,
+    coinFormater,
+    stay: {
+        _id: this.stay._id,
+        name: this.stay.name,
+        imgUrl: this.stay.imgUrls[0],
+    },
+    host: {
+        _id: this.stay.host._id,
+        fullName: this.stay.host.fullName,
+        imgUrl: this.stay.host.imgUrl,
+    },
+    guest: {
+        _id: "1",
+        fullName: "Muki Kuki",
+        imgUrl: this.stay.host.imgUrl,
+    },
+};

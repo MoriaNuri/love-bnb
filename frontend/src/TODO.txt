@@ -1,0 +1,55 @@
+
+TODO:
+
+header:
+hero: img,sentence
+logoV
+user list(login,sign up, become a host
+
+filter:
+date-picker
+
+pointer: filter
+details: space in entire,share,save,#href-ask asi
+users/hosts
+icon amenities
+max-main-layout
+list-margin from header
+data review
+carusale-hover
+
+backend:
+atlas
+:db
+user,
+stay,
+other:[], max price:5000
+
+
+Key features:Browse stays
+ Reserve a stay,
+  host (add)  stay, 
+  communicate with host/guest, 
+  read/add reviews.
+  
+  delete img
+  delete comments
+
+  data-picker:hide 
+  new input with label and place holder-desing
+  marjin-bottom-(button)
+
+
+  bug in heart-stay-list
+  same marjin in home page
+
+
+  order-make it smart
+  make it trip
+
+  loading-cancel set time (when we have backend)
+
+  user msg-from the header
+
+ carrousel: hide arrows, color gray
+

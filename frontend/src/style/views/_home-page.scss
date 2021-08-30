@@ -1,0 +1,94 @@
+.home-page {
+    flex-grow: 1;
+    .explore-nature {
+        cursor: pointer;
+        background-image: url(~@/assets/img/home-page/nature.png);
+        background-size: cover;
+        position: relative;
+        border-radius: 10px;
+        width: 100%;
+        height: 450px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        .info {
+            transform: translateY(-50%);
+            position: absolute;
+            top: 50%;
+            left: 50px;
+        }
+        h1 {
+            font-size: 48px;
+        }
+        p {
+            font-size: 24px;
+            margin-bottom: 25px;
+        }
+        .router {
+            cursor: pointer;
+            color: $clr5;
+        }
+        button {
+            background-color: $clr5;
+            color: $clr2;
+            border-radius: 8px;
+            border: unset;
+            padding: 15px;
+            font-weight: 500;
+            font-size: 20px;
+        }
+    }
+    .join-host {
+        -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.3) inset;
+        -moz-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.3) inset;
+        cursor: pointer;
+        height: 400px;
+        background-image: url(~@/assets/img/home-page/host.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: $clr2;
+        p {
+            font-size: 1.2rem;
+            line-height: 1.5;
+            font-weight: 500;
+            letter-spacing: 0.6px;
+        }
+        h2 {
+            margin-top: 50px;
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        button {
+            margin-top: 30px;
+            cursor: pointer;
+            background-color: snow;
+            color: $clr5;
+            border-color: snow;
+            font-weight: 500;
+            font-size: 1.4rem;
+            border-radius: 7px;
+            border: unset;
+            padding: 15px 30px 15px 30px;
+        }
+    }
+    .outdoors {
+        border-radius: 10px;
+        width: 100%;
+        cursor: pointer;
+    }
+}
+@include for-normal-layout {
+}
+
+@include for-narrow-layout {
+}
+
+@include for-mobile-layout {
+    
+    .explore-nature{
+        width: 90vw;
+    }
+    .join-host{
+        width: 100vw;
+    }
+
+}

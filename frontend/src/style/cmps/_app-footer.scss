@@ -1,0 +1,39 @@
+.app-footer {
+    border-top: solid 1px $clr1;
+    background-color: $clr4;
+    .footer-container {
+        padding: 10px;
+        .footer-inner-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .social {
+            a {
+                display: inline-block;
+                text-decoration: none;
+                color: $clr5;
+                i {
+                    margin-inline-end: 9px;
+                    font-size: 1.5rem;
+                    &.fa-facebook-square {
+                        &:hover {
+                            color: #1877f2;
+                        }
+                    }
+                    &.fa-instagram {
+                        &:hover {
+                          color:#fd1d1d
+                        }
+                    }
+                    &.fa-twitter {
+                        &:hover {
+                            color: rgba(29,161,242,1.00);
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}
