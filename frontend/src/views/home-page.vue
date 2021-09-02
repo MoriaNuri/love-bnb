@@ -22,8 +22,11 @@
         <h2>Join our hosts</h2>
         <p>No matter what kind of home or room you want to share,</p>
         <p>Lovebnb makes it simple and secure to host travelers.</p>
-
-        <button>Join now</button>
+        <button @click="toggleModal">Join now</button>
+      </div>
+      <div class="modal-development" v-if="isOpen">
+        <div class="close" @click="toggleModal">X</div>
+        <p>Feature in development, will be added soon, stay updated </p>
       </div>
     </section>
   </div>
@@ -38,6 +41,7 @@ export default {
   name: "homePage",
   data() {
     return {
+      isOpen:false,
       cities: [
         {
           title: "Manhattan",
@@ -84,7 +88,7 @@ export default {
       ],
     };
   },
-  //TODO: EVENT BUS
+
   methods: {
     openHeader() {
       eventBus.$emit("openHeader");
@@ -101,6 +105,10 @@ export default {
       const filterUrl = utilService.objToUrl(this.filterBy);
       this.$router.push(`/stay?${filterUrl}`);
     },
+    toggleModal(){
+      this.isOpen=!this.isOpen
+    }
+    
   },
 
   computed: {

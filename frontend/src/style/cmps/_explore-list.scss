@@ -29,6 +29,12 @@
     .items-container {
         width: 90vw;
         gap: 20px;
+        overflow-x: scroll;
+        max-width: 90vw;
+        transform: translateX(-5%);
+			&::-webkit-scrollbar {
+				display: none;
+			}
         .card-explore{
             width: 90vw;
             img {

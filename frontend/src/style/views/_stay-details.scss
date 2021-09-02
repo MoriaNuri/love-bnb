@@ -242,10 +242,22 @@
         }
         .details-gallery {
             display: none;
+            
         }
         .map-container {
             width: 450px;
            
+        }
+        .details-header{
+            .bottom{
+                // flex-direction: column;
+                .share{
+                    display: none;
+                }
+                .save{
+                    display: none;
+                }
+            }
         }
     }
 }

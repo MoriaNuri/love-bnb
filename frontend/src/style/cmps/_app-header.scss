@@ -10,6 +10,7 @@
 }
 
 .app-header {
+   
     background-color: $clr2;
     font-size: 1rem;
     letter-spacing: 0.1px;
@@ -76,6 +77,7 @@
                 }
             }
             button {
+                display: none;
                 cursor: pointer;
                 margin-top: 1px;
                 animation-name: slide-top;
@@ -114,7 +116,6 @@
                     padding: 12px 5px;
                     border-radius: 100px;
                     box-sizing: border-box;
-                
                 }
             }
         }
@@ -138,7 +139,7 @@
                 gap: 10px;
             }
             .explore {
-                color: #FFFFFF;
+                color: #ffffff;
             }
             .lng {
                 cursor: pointer;
@@ -204,6 +205,7 @@
             }
             .middle {
                 color: $clr2;
+               
             }
             .middle .places .sep {
                 background-color: $clr2;
@@ -211,6 +213,30 @@
             .right a {
                 color: $clr2;
             }
+            
         }
     }
+}
+@include for-mobile-layout {
+    .app-header {
+        .mobile-filter{
+            display: block;
+        }
+        
+        align-items: center;
+        .top {
+            .logo {
+                display: none;
+            }
+            .right {
+                display: none;
+            }
+            .middle {
+                .explore {
+                    display: none;
+                }
+            }
+        }
+    }
+  
 }

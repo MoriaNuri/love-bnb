@@ -157,3 +157,20 @@
 .home-top .stay-filter {
     position: absolute !important;
 }
+@include for-mobile-layout{
+    // .stay-filter{
+    //     margin: 0 20%;
+    //     // width: 80vw;
+    //     // .first{
+    //     //     margin: 0 20%;
+    //     //     width: 80vw;
+
+    //     // }
+    // }
+    .app-header{
+        // .bottom{
+        //     display: none;
+        //     margin: 0 1000px;
+        // }
+    }
+}

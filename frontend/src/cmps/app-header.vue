@@ -10,14 +10,15 @@
       <div class="middle">
         <div class="places" v-if="isOpen">
            <div class="explore" @click="goToExplore">Explore</div>
-          <!-- <div>Places to stay</div> -->
-          <!-- <div class="sep"></div> -->
         </div>
         <button v-else @click.stop="openHeader">
           <span>Start your search</span>
-          <!-- <span> {{searchToShow}}</span> -->
           <i class="fas fa-search"></i>
         </button>
+         <!-- <button class="mobile-filter" @click.stop="openHeader">
+          <span>Start your search</span>
+          <i class="fas fa-search"></i>
+        </button> -->
       </div>
 
       <div class="right">
@@ -28,7 +29,6 @@
           @logout="logout"
           @closeUserModal="closeUserModal"
         />
-        <!-- TODO:PAGE HOST -->
         <nav>
           <router-link class="host" to="stay/profile"
             >Become a host</router-link
@@ -52,7 +52,6 @@
          <user-msg />
       </div>
     </div>
-    <!-- </div> -->
     <div v-if="isOpen" class="bottom">
       <stay-filter />
     </div>
